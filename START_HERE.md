@@ -34,7 +34,7 @@ Open `data/portfolio.ts` and change:
 ### 4. Add Your Resume
 
 1. Create or export your resume as PDF
-2. Save as `resume.pdf` in the `public/` folder
+2. Save as `NhiLe_CV_FrontendEngineer.pdf` in the `public/` folder
 3. Done! Download button works automatically
 
 ---
@@ -229,7 +229,7 @@ npx prettier --write .
 Before sharing your portfolio:
 
 - [ ] Updated `data/portfolio.ts` with all info
-- [ ] Added `public/resume.pdf`
+- [ ] Added `public/NhiLe_CV_FrontendEngineer.pdf`
 - [ ] Verified all external links
 - [ ] Tested dark mode
 - [ ] Tested on mobile
@@ -260,7 +260,7 @@ Before sharing your portfolio:
 | Update skills     | `data/portfolio.ts`     | `skills.groups`                       |
 | Change font       | `app/layout.tsx`        | Font import                           |
 | Update nav links  | `components/navbar.tsx` | `navLinks` array                      |
-| Add resume        | `public/`               | Add `resume.pdf`                      |
+| Add resume        | `public/`               | Add `NhiLe_CV_FrontendEngineer.pdf`   |
 
 ---
 

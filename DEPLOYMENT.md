@@ -8,7 +8,7 @@ Before deploying, ensure:
 
 - [ ] `npm run build` completes without errors
 - [ ] All content updated in `data/portfolio.ts`
-- [ ] `resume.pdf` added to `public/`
+- [ ] `NhiLe_CV_FrontendEngineer.pdf` added to `public/`
 - [ ] Social links verified and working
 - [ ] Email link tested
 - [ ] Dark mode tested (click moon icon)

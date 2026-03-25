@@ -108,7 +108,7 @@ export function Contact({ description, email, github, linkedin }: ContactProps) 
                     variant="default"
                     className="group"
                   >
-                    <a href="/resume.pdf" download>
+                    <a href="/NhiLe_CV_FrontendEngineer.pdf" download>
                       Download Resume
                       <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                     </a>

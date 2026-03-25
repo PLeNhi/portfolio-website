@@ -69,7 +69,7 @@ export function Hero({ name, title, subtitle, intro, email, github, linkedin }: 
                 variant="outline"
                 asChild
               >
-                <a href="/resume.pdf" download>
+                <a href="/NhiLe_CV_FrontendEngineer.pdf" download>
                   Download Resume
                 </a>
               </Button>

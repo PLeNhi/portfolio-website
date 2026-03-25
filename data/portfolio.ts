@@ -7,7 +7,7 @@ export const portfolioData = {
   email: "ilenhi2710@gmail.com",
   github: "https://github.com/PLeNhi",
   linkedin: "https://linkedin.com/in/nhi-le-b47164352",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/NhiLe_CV_FrontendEngineer.pdf",
 
   about: {
     title: "About",

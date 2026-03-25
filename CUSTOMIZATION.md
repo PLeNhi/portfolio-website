@@ -24,7 +24,7 @@ export const portfolioData = {
   email: "your.email@example.com",
   github: "https://github.com/yourname",
   linkedin: "https://linkedin.com/in/yourname",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/NhiLe_CV_FrontendEngineer.pdf",
   // ... rest of data
 };
 ```
@@ -357,10 +357,10 @@ email: "your.email@company.com",
 ## 📄 Adding Your Resume
 
 1. Create a PDF of your resume
-2. Save as `resume.pdf` in the `public/` folder
+2. Save as `NhiLe_CV_FrontendEngineer.pdf` in the `public/` folder
 3. The download buttons will automatically work
 
-**Naming**: The file MUST be named `resume.pdf` to match the `resumeUrl` in `portfolio.ts`.
+**Naming**: The file MUST be named `NhiLe_CV_FrontendEngineer.pdf` to match the `resumeUrl` in `portfolio.ts`.
 
 ---
 
@@ -486,7 +486,7 @@ Before going live:
 - [ ] Added 3-5 projects
 - [ ] Added 2-3 work experiences
 - [ ] Updated skills (removed irrelevant ones)
-- [ ] Added resume.pdf to public/
+- [ ] Added NhiLe_CV_FrontendEngineer.pdf to public/
 - [ ] Tested dark mode
 - [ ] Tested on mobile (use DevTools)
 - [ ] Verified all social links

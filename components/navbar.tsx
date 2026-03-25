@@ -64,7 +64,7 @@ export function Navbar() {
             size="sm"
             className="hidden sm:inline-flex"
           >
-            <a href="/resume.pdf" download>
+            <a href="/NhiLe_CV_FrontendEngineer.pdf" download>
               Resume
             </a>
           </Button>
@@ -95,7 +95,7 @@ export function Navbar() {
               </Link>
             ))}
             <Button asChild variant="default" className="w-full sm:hidden">
-              <a href="/resume.pdf" download>
+              <a href="/NhiLe_CV_FrontendEngineer.pdf" download>
                 Resume
               </a>
             </Button>
