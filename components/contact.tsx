@@ -1,9 +1,8 @@
 "use client";
 
-import { Mail, Github, Linkedin, ArrowRight } from "lucide-react";
+import {  Github, Linkedin, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { ScrollFadeIn } from "./scroll-fade-in";
-import Link from "next/link";
 
 interface ContactProps {
   description: string;

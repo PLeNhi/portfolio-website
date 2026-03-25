@@ -1,9 +1,8 @@
 "use client";
 
-import { ExternalLink, Github, BookOpen } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import { Button } from "./ui/button";
 import { ScrollFadeIn } from "./scroll-fade-in";
-import Link from "next/link";
 
 interface Project {
   id: number;
