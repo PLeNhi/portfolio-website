@@ -47,7 +47,7 @@ export function Footer({ name }: FooterProps) {
             <p className="text-sm font-semibold">External</p>
             <ul className="space-y-1">
               {[
-                { href: "https://github.com/nhile", label: "GitHub" },
+                { href: "https://github.com/PLeNhi", label: "GitHub" },
                 { href: "https://linkedin.com/in/nhile", label: "LinkedIn" },
                 { href: "mailto:hello@nhile.dev", label: "Email" },
               ].map((link) => (
