@@ -3,6 +3,7 @@
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "./ui/button";
 import { ScrollFadeIn } from "./scroll-fade-in";
+import { motion } from "framer-motion";
 
 interface Project {
   id: number;
@@ -26,7 +27,7 @@ export function Projects({ projects }: ProjectsProps) {
   const otherProjects = projects.filter((p) => !p.featured);
 
   return (
-    <section id="projects" className="py-20 px-4 md:px-6 bg-muted/30">
+    <section id="projects" className="py-40 px-4 md:px-6 bg-muted/30">
       <div className="max-w-6xl mx-auto">
         <ScrollFadeIn>
           <div className="space-y-12">
@@ -46,7 +47,11 @@ export function Projects({ projects }: ProjectsProps) {
             {/* Featured Project */}
             {featuredProject && (
               <ScrollFadeIn delay={0.2}>
-                <div className="bg-card border border-border rounded-lg p-8 md:p-12">
+                <motion.div
+                  whileHover={{ y: -5 }}
+                  transition={{ duration: 0.3 }}
+                  className="bg-card border border-border rounded-lg p-8 md:p-12 hover:shadow-xl transition-shadow"
+                >
                   <div className="grid md:grid-cols-2 gap-8 items-center">
                     <div className="space-y-6">
                       <div className="space-y-3">
@@ -116,7 +121,7 @@ export function Projects({ projects }: ProjectsProps) {
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </ScrollFadeIn>
             )}
 
@@ -127,8 +132,12 @@ export function Projects({ projects }: ProjectsProps) {
                   <ScrollFadeIn
                     key={project.id}
                     delay={0.3 + index * 0.1}
-                    className="bg-card border border-border rounded-lg p-6 hover:border-accent/50 transition-colors flex flex-col"
                   >
+                    <motion.div
+                      whileHover={{ y: -3, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1)" }}
+                      transition={{ duration: 0.3 }}
+                      className="bg-card border border-border rounded-lg p-6 hover:border-accent/50 transition-colors flex flex-col h-full"
+                    >
                     {/* Project Preview */}
                     <div className="h-48 bg-gradient-to-br from-secondary/30 to-muted rounded-lg mb-6 flex items-center justify-center">
                       <div className="text-center space-y-2">
@@ -188,6 +197,7 @@ export function Projects({ projects }: ProjectsProps) {
                         </a>
                       </Button>
                     </div>
+                    </motion.div>
                   </ScrollFadeIn>
                 ))}
               </div>

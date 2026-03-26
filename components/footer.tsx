@@ -8,7 +8,7 @@ interface FooterProps {
 
 export function Footer({ name }: FooterProps) {
   return (
-    <footer className="border-t border-border bg-muted/30 py-12 px-4 md:px-6">
+    <footer className="border-t border-border bg-muted/30 py-24 px-4 md:px-6">
       <div className="max-w-6xl mx-auto space-y-8">
         <div className="grid md:grid-cols-3 gap-8">
           {/* Brand */}

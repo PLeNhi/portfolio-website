@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { ScrollFadeIn } from "./scroll-fade-in";
 
 interface Stat {
@@ -14,7 +15,7 @@ interface AboutProps {
 
 export function About({ description, stats }: AboutProps) {
   return (
-    <section id="about" className="py-20 px-4 md:px-6 bg-muted/30">
+    <section id="about" className="py-40 px-4 md:px-6 bg-muted/30">
       <div className="max-w-6xl mx-auto">
         <ScrollFadeIn>
           <div className="space-y-12">
@@ -38,16 +39,21 @@ export function About({ description, stats }: AboutProps) {
             {/* Stats Grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 pt-8">
               {stats.map((stat, index) => (
-                <ScrollFadeIn
+                <motion.div
                   key={index}
-                  delay={0.3 + index * 0.1}
-                  className="bg-card border border-border rounded-lg p-6 text-center hover:border-accent/50 transition-colors"
+                  whileHover={{ y: -4 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 >
-                  <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                    {stat.value}
-                  </div>
-                  <p className="text-sm text-muted-foreground">{stat.label}</p>
-                </ScrollFadeIn>
+                  <ScrollFadeIn
+                    delay={0.3 + index * 0.1}
+                    className="bg-card border border-border rounded-lg p-6 text-center hover:border-accent/50 transition-colors h-full"
+                  >
+                    <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+                      {stat.value}
+                    </div>
+                    <p className="text-sm text-muted-foreground">{stat.label}</p>
+                  </ScrollFadeIn>
+                </motion.div>
               ))}
             </div>
           </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import {  Github, Linkedin, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { ScrollFadeIn } from "./scroll-fade-in";
@@ -13,7 +14,7 @@ interface ContactProps {
 
 export function Contact({ description, email, github, linkedin }: ContactProps) {
   return (
-    <section id="contact" className="py-20 px-4 md:px-6">
+    <section id="contact" className="py-40 px-4 md:px-6">
       <div className="max-w-4xl mx-auto">
         <ScrollFadeIn>
           <div className="space-y-12 text-center">
@@ -65,38 +66,42 @@ export function Contact({ description, email, github, linkedin }: ContactProps) 
                 <div className="space-y-4">
                   <p className="text-sm text-muted-foreground">Find me on</p>
                   <div className="flex gap-3 justify-center">
-                    <Button
-                      asChild
-                      variant="outline"
-                      size="lg"
-                      className="group"
-                    >
-                      <a
-                        href={github}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300, damping: 20 }}>
+                      <Button
+                        asChild
+                        variant="outline"
+                        size="lg"
+                        className="group"
                       >
-                        <Github className="w-5 h-5 mr-2" />
-                        GitHub
-                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                      </a>
-                    </Button>
-                    <Button
-                      asChild
-                      variant="outline"
-                      size="lg"
-                      className="group"
-                    >
-                      <a
-                        href={linkedin}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        <a
+                          href={github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Github className="w-5 h-5 mr-2" />
+                          GitHub
+                          <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                        </a>
+                      </Button>
+                    </motion.div>
+                    <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300, damping: 20 }}>
+                      <Button
+                        asChild
+                        variant="outline"
+                        size="lg"
+                        className="group"
                       >
-                        <Linkedin className="w-5 h-5 mr-2" />
-                        LinkedIn
-                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                      </a>
-                    </Button>
+                        <a
+                          href={linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Linkedin className="w-5 h-5 mr-2" />
+                          LinkedIn
+                          <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                        </a>
+                      </Button>
+                    </motion.div>
                   </div>
                 </div>
 

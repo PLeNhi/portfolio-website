@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { ScrollFadeIn } from "./scroll-fade-in";
@@ -17,7 +18,7 @@ interface CaseStudiesProps {
 
 export function CaseStudies({ caseStudies }: CaseStudiesProps) {
   return (
-    <section id="case-studies" className="py-20 px-4 md:px-6 bg-muted/30">
+    <section id="case-studies" className="py-40 px-4 md:px-6 bg-muted/30">
       <div className="max-w-6xl mx-auto">
         <ScrollFadeIn>
           <div className="space-y-12">
@@ -43,26 +44,31 @@ export function CaseStudies({ caseStudies }: CaseStudiesProps) {
             {/* Case Study Cards */}
             <div className="grid md:grid-cols-3 gap-6 pt-4">
               {caseStudies.map((study, index) => (
-                <ScrollFadeIn
+                <motion.div
                   key={study.id}
-                  delay={0.3 + index * 0.1}
-                  className="bg-card border border-border rounded-lg p-8 hover:border-accent/50 transition-all hover:shadow-lg flex flex-col"
+                  whileHover={{ y: -3 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 >
-                  <div className="space-y-4 flex-1">
-                    <h3 className="text-xl font-semibold">{study.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {study.summary}
-                    </p>
-                  </div>
-
-                  <Button
-                    variant="ghost"
-                    className="w-full justify-start mt-6 pl-0 group"
+                  <ScrollFadeIn
+                    delay={0.3 + index * 0.1}
+                    className="bg-card border border-border rounded-lg p-8 hover:border-accent/50 transition-all hover:shadow-lg flex flex-col h-full"
                   >
-                    Read more
-                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </ScrollFadeIn>
+                    <div className="space-y-4 flex-1">
+                      <h3 className="text-xl font-semibold">{study.title}</h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        {study.summary}
+                      </p>
+                    </div>
+
+                    <Button
+                      variant="ghost"
+                      className="w-full justify-start mt-6 pl-0 group"
+                    >
+                      Read more
+                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </ScrollFadeIn>
+                </motion.div>
               ))}
             </div>
           </div>

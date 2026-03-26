@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { ScrollFadeIn } from "./scroll-fade-in";
 
 interface SkillGroup {
@@ -13,7 +14,7 @@ interface SkillsProps {
 
 export function Skills({ groups }: SkillsProps) {
   return (
-    <section id="skills" className="py-20 px-4 md:px-6">
+    <section id="skills" className="py-40 px-4 md:px-6">
       <div className="max-w-6xl mx-auto">
         <ScrollFadeIn>
           <div className="space-y-12">
@@ -33,25 +34,30 @@ export function Skills({ groups }: SkillsProps) {
             {/* Skills Grid */}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {groups.map((group, index) => (
-                <ScrollFadeIn
+                <motion.div
                   key={index}
-                  delay={0.2 + index * 0.1}
-                  className="bg-card border border-border rounded-lg p-6 hover:border-accent/50 transition-colors"
+                  whileHover={{ y: -4 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 >
-                  <h3 className="text-lg font-semibold mb-4 text-primary">
-                    {group.name}
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {group.skills.map((skill, skillIndex) => (
-                      <span
-                        key={skillIndex}
-                        className="px-3 py-1.5 bg-muted rounded-full text-sm text-muted-foreground hover:text-foreground hover:bg-accent/10 transition-colors"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </ScrollFadeIn>
+                  <ScrollFadeIn
+                    delay={0.2 + index * 0.1}
+                    className="bg-card border border-border rounded-lg p-6 hover:border-accent/50 transition-colors h-full"
+                  >
+                    <h3 className="text-lg font-semibold mb-4 text-primary">
+                      {group.name}
+                    </h3>
+                    <div className="flex flex-wrap gap-2">
+                      {group.skills.map((skill, skillIndex) => (
+                        <span
+                          key={skillIndex}
+                          className="px-3 py-1.5 bg-muted rounded-full text-sm text-muted-foreground hover:text-foreground hover:bg-accent/10 transition-colors"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </ScrollFadeIn>
+                </motion.div>
               ))}
             </div>
           </div>

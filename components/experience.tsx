@@ -2,6 +2,7 @@
 
 import { ScrollFadeIn } from "./scroll-fade-in";
 import { CheckCircle2 } from "lucide-react";
+import { motion } from "framer-motion";
 
 interface ExperienceItem {
   id: number;
@@ -18,7 +19,7 @@ interface ExperienceProps {
 
 export function Experience({ experiences }: ExperienceProps) {
   return (
-    <section id="experience" className="py-20 px-4 md:px-6">
+    <section id="experience" className="py-40 px-4 md:px-6">
       <div className="max-w-6xl mx-auto">
         <ScrollFadeIn>
           <div className="space-y-12">
@@ -38,11 +39,15 @@ export function Experience({ experiences }: ExperienceProps) {
             {/* Experience Items */}
             <div className="space-y-8">
               {experiences.map((exp, index) => (
-                <ScrollFadeIn
+                <motion.div
                   key={exp.id}
-                  delay={0.2 + index * 0.1}
-                  className="bg-card border border-border rounded-lg p-8"
+                  whileHover={{ y: -3 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 >
+                  <ScrollFadeIn
+                    delay={0.2 + index * 0.1}
+                    className="bg-card border border-border rounded-lg p-8"
+                  >
                   <div className="space-y-6">
                     {/* Header */}
                     <div className="space-y-2">
@@ -79,6 +84,7 @@ export function Experience({ experiences }: ExperienceProps) {
                     </div>
                   </div>
                 </ScrollFadeIn>
+                </motion.div>
               ))}
             </div>
           </div>
