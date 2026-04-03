@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {  Github, Linkedin, ArrowRight } from "lucide-react";
+import { Github, Linkedin, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { ScrollFadeIn } from "./scroll-fade-in";
 
@@ -12,7 +12,12 @@ interface ContactProps {
   linkedin: string;
 }
 
-export function Contact({ description, email, github, linkedin }: ContactProps) {
+export function Contact({
+  description,
+  email,
+  github,
+  linkedin,
+}: ContactProps) {
   return (
     <section id="contact" className="py-40 px-4 md:px-6">
       <div className="max-w-4xl mx-auto">
@@ -29,18 +34,17 @@ export function Contact({ description, email, github, linkedin }: ContactProps) 
                   I'm Open to Opportunities
                 </h2>
               </ScrollFadeIn>
-              <ScrollFadeIn delay={0.2} className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <ScrollFadeIn
+                delay={0.2}
+                className="text-lg text-muted-foreground max-w-2xl mx-auto"
+              >
                 {description}
               </ScrollFadeIn>
             </div>
 
             {/* Primary CTA */}
             <ScrollFadeIn delay={0.3}>
-              <Button
-                size="lg"
-                asChild
-                className="group"
-              >
+              <Button size="lg" asChild className="group">
                 <a href={`mailto:${email}`}>
                   Get in touch
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -66,7 +70,14 @@ export function Contact({ description, email, github, linkedin }: ContactProps) 
                 <div className="space-y-4">
                   <p className="text-sm text-muted-foreground">Find me on</p>
                   <div className="flex gap-3 justify-center">
-                    <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300, damping: 20 }}>
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 300,
+                        damping: 20,
+                      }}
+                    >
                       <Button
                         asChild
                         variant="outline"
@@ -84,7 +95,14 @@ export function Contact({ description, email, github, linkedin }: ContactProps) 
                         </a>
                       </Button>
                     </motion.div>
-                    <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300, damping: 20 }}>
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 300,
+                        damping: 20,
+                      }}
+                    >
                       <Button
                         asChild
                         variant="outline"
@@ -107,12 +125,11 @@ export function Contact({ description, email, github, linkedin }: ContactProps) 
 
                 {/* Resume */}
                 <div>
-                  <Button
-                    asChild
-                    variant="default"
-                    className="group"
-                  >
-                    <a href="/NhiLe_CV_FrontendEngineer.pdf" download>
+                  <Button asChild variant="default" className="group">
+                    <a
+                      href="/Frontend_Developer_Le_Thi_Y_Nhi.docx.pdf"
+                      download
+                    >
                       Download Resume
                       <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                     </a>

@@ -17,7 +17,15 @@ interface HeroProps {
   linkedin: string;
 }
 
-export function Hero({ name, title, subtitle, intro, email, github, linkedin }: HeroProps) {
+export function Hero({
+  name,
+  title,
+  subtitle,
+  intro,
+  email,
+  github,
+  linkedin,
+}: HeroProps) {
   return (
     <section className="min-h-screen pt-32 pb-20 px-4 md:px-6 relative overflow-hidden">
       {/* Background decorative elements */}
@@ -80,7 +88,10 @@ export function Hero({ name, title, subtitle, intro, email, github, linkedin }: 
               </ScrollFadeIn>
             </div>
 
-            <ScrollFadeIn delay={0.4} className="text-lg text-muted-foreground leading-relaxed max-w-lg">
+            <ScrollFadeIn
+              delay={0.4}
+              className="text-lg text-muted-foreground leading-relaxed max-w-lg"
+            >
               <motion.p
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -91,17 +102,16 @@ export function Hero({ name, title, subtitle, intro, email, github, linkedin }: 
             </ScrollFadeIn>
 
             {/* CTAs */}
-            <ScrollFadeIn delay={0.5} className="flex flex-col sm:flex-row gap-4 pt-4">
+            <ScrollFadeIn
+              delay={0.5}
+              className="flex flex-col sm:flex-row gap-4 pt-4"
+            >
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
               >
-                <Button
-                  size="lg"
-                  asChild
-                  className="group"
-                >
+                <Button size="lg" asChild className="group">
                   <Link href="#projects">
                     View Projects
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -113,12 +123,8 @@ export function Hero({ name, title, subtitle, intro, email, github, linkedin }: 
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.7 }}
               >
-                <Button
-                  size="lg"
-                  variant="outline"
-                  asChild
-                >
-                  <a href="/NhiLe_CV_FrontendEngineer.pdf" download>
+                <Button size="lg" variant="outline" asChild>
+                  <a href="/Frontend_Developer_Le_Thi_Y_Nhi.docx.pdf" download>
                     Download Resume
                   </a>
                 </Button>
@@ -136,7 +142,9 @@ export function Hero({ name, title, subtitle, intro, email, github, linkedin }: 
                   key={idx}
                   href={social.href}
                   target={social.label !== "Email" ? "_blank" : undefined}
-                  rel={social.label !== "Email" ? "noopener noreferrer" : undefined}
+                  rel={
+                    social.label !== "Email" ? "noopener noreferrer" : undefined
+                  }
                   className="p-2 rounded-lg hover:bg-muted transition-all text-muted-foreground hover:text-primary hover:scale-110"
                   aria-label={social.label}
                   initial={{ opacity: 0, y: 10 }}

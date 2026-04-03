@@ -34,7 +34,7 @@ Open `data/portfolio.ts` and change:
 ### 4. Add Your Resume
 
 1. Create or export your resume as PDF
-2. Save as `NhiLe_CV_FrontendEngineer.pdf` in the `public/` folder
+2. Save as `Frontend_Developer_Le_Thi_Y_Nhi.docx.pdf` in the `public/` folder
 3. Done! Download button works automatically
 
 ---
@@ -229,7 +229,7 @@ npx prettier --write .
 Before sharing your portfolio:
 
 - [ ] Updated `data/portfolio.ts` with all info
-- [ ] Added `public/NhiLe_CV_FrontendEngineer.pdf`
+- [ ] Added `public/Frontend_Developer_Le_Thi_Y_Nhi.docx.pdf`
 - [ ] Verified all external links
 - [ ] Tested dark mode
 - [ ] Tested on mobile
@@ -251,16 +251,16 @@ Before sharing your portfolio:
 
 ## 📞 Quick Reference
 
-| Task              | File                    | What to Edit                          |
-| ----------------- | ----------------------- | ------------------------------------- |
-| Update name/info  | `data/portfolio.ts`     | `name`, `email`, `github`, `linkedin` |
-| Change color      | `app/globals.css`       | `--primary: ...`                      |
-| Update projects   | `data/portfolio.ts`     | `projects` array                      |
-| Update experience | `data/portfolio.ts`     | `experience` array                    |
-| Update skills     | `data/portfolio.ts`     | `skills.groups`                       |
-| Change font       | `app/layout.tsx`        | Font import                           |
-| Update nav links  | `components/navbar.tsx` | `navLinks` array                      |
-| Add resume        | `public/`               | Add `NhiLe_CV_FrontendEngineer.pdf`   |
+| Task              | File                    | What to Edit                                   |
+| ----------------- | ----------------------- | ---------------------------------------------- |
+| Update name/info  | `data/portfolio.ts`     | `name`, `email`, `github`, `linkedin`          |
+| Change color      | `app/globals.css`       | `--primary: ...`                               |
+| Update projects   | `data/portfolio.ts`     | `projects` array                               |
+| Update experience | `data/portfolio.ts`     | `experience` array                             |
+| Update skills     | `data/portfolio.ts`     | `skills.groups`                                |
+| Change font       | `app/layout.tsx`        | Font import                                    |
+| Update nav links  | `components/navbar.tsx` | `navLinks` array                               |
+| Add resume        | `public/`               | Add `Frontend_Developer_Le_Thi_Y_Nhi.docx.pdf` |
 
 ---
 

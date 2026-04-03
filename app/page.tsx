@@ -4,7 +4,7 @@ import { About } from "@/components/about";
 import { Skills } from "@/components/skills";
 import { Projects } from "@/components/projects";
 import { Experience } from "@/components/experience";
-import { CaseStudies } from "@/components/case-studies";
+// import { CaseStudies } from "@/components/case-studies";
 import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
 import { portfolioData } from "@/data/portfolio";
@@ -29,7 +29,7 @@ export default function Home() {
       <Skills groups={portfolioData.skills.groups} />
       <Projects projects={portfolioData.projects} />
       <Experience experiences={portfolioData.experience} />
-      <CaseStudies caseStudies={portfolioData.caseStudies} />
+      {/* <CaseStudies caseStudies={portfolioData.caseStudies} /> */}
       <Contact
         description={portfolioData.contact.description}
         email={portfolioData.email}

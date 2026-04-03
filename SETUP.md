@@ -85,7 +85,7 @@ Open `data/portfolio.ts` and update:
 ### Step 3: Create Your Resume
 
 1. Create a PDF of your resume
-2. Save it as `public/NhiLe_CV_FrontendEngineer.pdf`
+2. Save it as `public/Frontend_Developer_Le_Thi_Y_Nhi.docx.pdf`
 3. Update the download links if needed
 
 ### Step 4: Customize Styling (Optional)
@@ -247,7 +247,7 @@ To customize:
 
 ## 🔍 Performance Checklist
 
-- [ ] Resume PDF uploaded to `public/NhiLe_CV_FrontendEngineer.pdf`
+- [ ] Resume PDF uploaded to `public/Frontend_Developer_Le_Thi_Y_Nhi.docx.pdf`
 - [ ] All social links verified
 - [ ] Email address correct
 - [ ] Projects completed and customized
@@ -295,7 +295,7 @@ You now have a premium portfolio website ready to customize and deploy. Here's y
 
 1. Update your content in `data/portfolio.ts`
 2. Test locally with `npm run dev`
-3. Add your resume PDF to `public/NhiLe_CV_FrontendEngineer.pdf`
+3. Add your resume PDF to `public/Frontend_Developer_Le_Thi_Y_Nhi.docx.pdf`
 4. Deploy to Vercel or your preferred platform
 5. Share your portfolio with recruiters! 🎉
 

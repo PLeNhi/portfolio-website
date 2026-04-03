@@ -36,7 +36,7 @@ portfolio-website/
 │
 ├── public/                # Static assets
 │   ├── favicon.svg       # Portfolio initial/logo
-│   ├── NhiLe_CV_FrontendEngineer.pdf        # Your resume (add this)
+│   ├── Frontend_Developer_Le_Thi_Y_Nhi.docx.pdf        # Your resume (add this)
 │   └── projects/         # Project screenshots (create this)
 │
 ├── Configuration Files
@@ -444,7 +444,7 @@ const inter = Inter({ ... })  // Change this import
 Before deploying:
 
 - [ ] Update `data/portfolio.ts` with your info
-- [ ] Add `NhiLe_CV_FrontendEngineer.pdf` to `public/`
+- [ ] Add `Frontend_Developer_Le_Thi_Y_Nhi.docx.pdf` to `public/`
 - [ ] Test dark mode (click moon icon)
 - [ ] Test mobile responsive
 - [ ] Check all external links work

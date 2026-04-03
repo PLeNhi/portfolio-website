@@ -3,16 +3,16 @@ export const portfolioData = {
   title: "Frontend Engineer",
   subtitle: "React, React Native, TypeScript",
   intro:
-    "I'm a Frontend Engineer focused on building polished web and mobile experiences with React, React Native, and TypeScript. I enjoy solving complex UI flows, improving reliability, and designing frontend structures that scale in real production systems.",
+    "Frontend Engineer with 3+ years of experience building and maintaining web and mobile applications using React, React Native, and TypeScript. Strong in handling complex UI logic, performance optimization, and debugging real-world production issues. Experienced in working closely with UI/UX and backend teams to deliver end-to-end features, ensuring consistent and reliable user experience across platforms.",
   email: "ilenhi2710@gmail.com",
   github: "https://github.com/PLeNhi",
   linkedin: "https://linkedin.com/in/nhi-le-b47164352",
-  resumeUrl: "/NhiLe_CV_FrontendEngineer.pdf",
+  resumeUrl: "/Frontend_Developer_Le_Thi_Y_Nhi.docx.pdf",
 
   about: {
     title: "About",
     description:
-      "I'm a Frontend Engineer with 3+ years of experience building and maintaining production-scale web and mobile applications using React, React Native, and TypeScript. I specialize in complex UI state management, navigation flows, cross-platform behavior consistency, and debugging production systems. I'm strong at improving stability, optimizing rendering performance, and delivering reliable user experiences.",
+      "Frontend Engineer with 3+ years of experience building and maintaining production web and mobile applications using React, React Native, and TypeScript. Strong in handling complex UI logic, performance optimization, and debugging real-world production issues. Experienced in working closely with UI/UX and backend teams to deliver end-to-end features, ensuring consistent and reliable user experience across platforms.",
     stats: [
       {
         label: "Years Experience",
@@ -38,7 +38,14 @@ export const portfolioData = {
     groups: [
       {
         name: "Frontend",
-        skills: ["ReactJS", "Next.js", "React Native", "TypeScript", "JavaScript", "Tailwind CSS"],
+        skills: [
+          "ReactJS",
+          "Next.js",
+          "React Native",
+          "TypeScript",
+          "JavaScript",
+          "Tailwind CSS",
+        ],
       },
       {
         name: "State & Data",
@@ -65,26 +72,26 @@ export const portfolioData = {
   },
 
   projects: [
-    {
-      id: 1,
-      name: "Campaign Management System",
-      summary:
-        "A simplified end-to-end campaign platform with admin management, analytics, API integration, and mobile participation flow.",
-      description:
-        "A production-scale campaign management system with both admin and mobile ecosystem. Handles campaign creation, management, state rendering, and reward tracking across web and mobile interfaces using API-driven UI.",
-      highlights: [
-        "Admin + mobile ecosystem",
-        "Campaign creation and management",
-        "Campaign state rendering",
-        "API-driven UI architecture",
-        "Reusable component system",
-      ],
-      techStack: ["React", "React Native", "TypeScript", "Redux", "Node.js"],
-      liveUrl: "https://campaign-demo.nhile.dev",
-      githubUrl: "https://github.com/PLeNhi/campaign-platform",
-      caseStudyUrl: "#case-studies",
-      featured: true,
-    },
+    // {
+    //   id: 1,
+    //   name: "Campaign Management System",
+    //   summary:
+    //     "A simplified end-to-end campaign platform with admin management, analytics, API integration, and mobile participation flow.",
+    //   description:
+    //     "A production-scale campaign management system with both admin and mobile ecosystem. Handles campaign creation, management, state rendering, and reward tracking across web and mobile interfaces using API-driven UI.",
+    //   highlights: [
+    //     "Admin + mobile ecosystem",
+    //     "Campaign creation and management",
+    //     "Campaign state rendering",
+    //     "API-driven UI architecture",
+    //     "Reusable component system",
+    //   ],
+    //   techStack: ["React", "React Native", "TypeScript", "Redux", "Node.js"],
+    //   liveUrl: "https://campaign-demo.nhile.dev",
+    //   githubUrl: "https://github.com/PLeNhi/campaign-platform",
+    //   caseStudyUrl: "#case-studies",
+    //   featured: true,
+    // },
     {
       id: 2,
       name: "Realtime Socket Web App",
@@ -100,8 +107,8 @@ export const portfolioData = {
         "Scalable frontend structure",
       ],
       techStack: ["React", "TypeScript", "Socket.io", "Tailwind CSS"],
-      liveUrl: "https://socket-app.nhile.dev",
-      githubUrl: "https://github.com/PLeNhi/realtime-socket-app",
+      liveUrl: "https://realtime-incident-center-frontend-4zwkipjlc-nhi-le.vercel.app",
+      githubUrl: "https://github.com/PLeNhi/realtime-incident-center",
       caseStudyUrl: "#case-studies",
       featured: false,
     },
@@ -120,7 +127,7 @@ export const portfolioData = {
         "SEO optimized",
       ],
       techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      liveUrl: "https://nhile.dev",
+      liveUrl: "https://portfolio-website-1m1o85tws-nhi-le.vercel.app",
       githubUrl: "https://github.com/PLeNhi/portfolio-website",
       caseStudyUrl: "#case-studies",
       featured: false,
